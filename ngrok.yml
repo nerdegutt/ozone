@@ -1,0 +1,14 @@
+authtoken: 2JM6xGAnpByr6YPecCQ1A_3o9iDP5D3hxBgHS2ptC8n
+region: eu
+
+tunnels:
+  labs:
+    addr: 8080
+    proto: http
+    host_header: localhost
+  helse:
+    addr: 8888
+    proto: http
+  nuxt:
+    addr: 3000
+    proto: http
