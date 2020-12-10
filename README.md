@@ -6,13 +6,13 @@
 - Hvor mange har forsøkt det?
 - Hvor mange har hatt behov for å vise noe som kjører på maskina si?
 
-## Oppsett av nettsted
+## Kjapt oppsett av noen nettsteder
 
 ```
 npx create-nuxt-app demo
 ```
 
-Gjøre litt tekstendringer, og fyre opp server
+Gjøre litt tekstendringer, smekke inn helseopplysninger, og fyre opp server
 
 ```
 npm run dev
@@ -22,7 +22,7 @@ Nuxt kjører default på http://localhost:3000
 
 ## Oppsett av enkel webside
 
-Lage en mappe, og index.html inni den. Bruke html:5 boilerplate i vscode.
+Lage en mappe, og index.html inni den. Bruker html:5 boilerplate i vscode.
 
 Bruke `http-server` for å servere den
 
@@ -32,7 +32,7 @@ npm i -g http-server
 http-server -p 8888
 ```
 
-Serveren serverer da katalogen den står i default på http://127.0.0.1:8888
+Serveren serverer da katalogen den står i på http://127.0.0.1:8888. Om vi ikke angir port så bruker den 8080.
 
 ## En tredje webside, Origo labs
 
@@ -54,7 +54,9 @@ ngrok http 8888
 
 Dette setter opp en åpen reverse proxy til det som måtte kjøre på port 8888, nå er det vår simple webside.
 
-Strengt talt trenger vi ikke `http-server` i dette tilfellet. Ngrok har innebygget en enkel filserver:
+Strengt talt trenger vi ikke `http-server` i dette tilfellet. Ngrok har innebygget en enkel filserver.
+
+## Vi skrur på filserver, må logge inn
 
 ```
 ngrok http file:///Users/erlend/dev/oslo-kommune/ozone/webside/
