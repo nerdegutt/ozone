@@ -60,6 +60,12 @@ Strengt talt trenger vi ikke `http-server` i dette tilfellet. Ngrok har innebygg
 ngrok http file:///Users/erlend/dev/oslo-kommune/ozone/webside/
 ```
 
+Om vi vil blodtrimme litt, så kan vi legge på brukernavn og passord (basic auth):
+
+```
+ngrok http file:///Users/erlend/dev/oslo-kommune/ozone/webside/ -auth="user:pass"
+```
+
 ## Enkle parametre for å sette region
 
 ```
